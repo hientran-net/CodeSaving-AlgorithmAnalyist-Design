@@ -2,7 +2,7 @@
 // input - process - output
 
 #include <iostream>
-
+using namespace std;
 // Bool method check if number is PrimeNumber -> return true | else -> return false
 bool isPrimeNumber(int number)
 {
@@ -20,12 +20,12 @@ bool isPrimeNumber(int number)
 int main()
 {
 	int number;
-	std::cout << "Enter number: ";
-	std::cin >> number;
+	cout << "Enter number: ";
+	cin >> number;
 
 	if (isPrimeNumber(number))
-		std::cout << number << " is Prime number\n";
+		cout << number << " is Prime number\n";
 	else if (!isPrimeNumber(number))
-		std::cout << number << " isn't Prime number\n";
+		cout << number << " isn't Prime number\n";
 	return 0;
 }
